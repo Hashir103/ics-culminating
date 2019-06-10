@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contests - Bill Gates Specialized School</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="/external/img/logo.png" />
+    <script src="contestsScript.js"></script>
+    <style>
+      table {
+        border: 5px solid black;
+        border-radius: 10px;
+        width: 100%;
+        padding: 5px;
+        cursor: default;
+      }
+      td {
+        padding: 5px;
+      }
+      .price {
+        text-align: center;
+      }
+      th {
+        font-size: 25px;
+      }
+      tr:hover {
+        background-color: rgb(240, 240, 240);
+      }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="innerHeader">
+      <img src="/external/img/logo.png" alt="School logo" height="150px" width="150px" align="middle">
+      Bill Gates Specialized School
+    </div>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">History
+          </button>
+          <div class="dropdown-content">
+            <a href="/history/alumni.html">Alumni</a>
+            <a href="/history/school_history.html">School History</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Our School
+            </button>
+            <div class="dropdown-content">
+              <a href="/our_school/gallery.html">Gallery</a>
+              <a href="/our_school/news.html">News</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+                <button class="dropbtn">Resources
+                </button>
+                <div class="dropdown-content">
+                  <a href="/resources/contests.html">Contests</a>
+                  <a href="/resources/eligibility.html">Eligibility Test</a>
+                </div>
+              </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Parents
+            </button>
+            <div class="dropdown-content">
+              <a href="/parents/policies.html">Policies</a>
+              <a href="/parents/contact.html">Contact Us</a>
+            </div>
+          </div> 
+      </div>
+</div> 
+    <div class="body">
+        <div class="box">
+          <h2>Contests</h2>
+          <p>At Bill Gates Specialized School, we offer a variety of contests for our students. Please refer to the table below for more information.
+          </p>
+          <table border="6">
+            <thead>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Information</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Northwestern Ontario High School Mathematics Competition</td>
+                <td class="price">$15</td>
+                <td id="info1"><a onClick="contest1()">More information</a></td>
+              </tr>
+              <tr>
+                <td>Math Battles</td>
+                <td class="price">$5</td>
+                <td id="info2"><a onClick="contest2()">More information</a></td>
+              </tr>
+              <tr>
+                <td>Generation Nano: Superheroes Inspired by Science</td>
+                <td class="price">$10</td>
+                <td id="info3"><a onClick="contest3()">More information</a></td>
+              </tr>
+              <tr>
+                <td>International Genetically Engineered Machine Competition</td>
+                <td class="price">Free</td>
+                <td id="info4"><a onClick="contest4()">More information</a></td>
+              </tr>
+              <tr>
+                <td> Junior Science and Humanities Symposia (JSHS) Program</td>
+                <td class="price">$25</td>
+                <td id="info5"><a onClick="contest5()">More information</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+    <div id="footer">
+        <p>This is not a real school. Made by Hashir & Kaitlyn. <a href="/copyright.html">© 2018-2019</a></p>
+    </div>
+</body>
+</html>

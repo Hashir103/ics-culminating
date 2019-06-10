@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alumni - Bill Gates Specialized School</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="/external/img/logo.png" />
+    <script src="alumniScript.js"></script>
+    <style>
+      .box {
+        background-color: white;
+        padding: 10px;
+      }
+      .alumniNames {
+      color: #000;
+      border: 1px solid #888;
+      width: 15%;
+      padding: 12px;
+      margin: 2px;
+      border-radius: 3px;
+      }
+      .alumniNames:hover {
+        background-color: rgb(180, 180, 180);
+          border: 1px solid rgb(128, 128, 128);
+      }
+      #alumniStuff {
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+        background-color: rgb(240, 240, 240);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+      #alumniButtons {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="innerHeader">
+      <img src="/external/img/logo.png" alt="School logo" height="150px" width="150px" align="middle">
+      Bill Gates Specialized School
+    </div>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">History
+          </button>
+          <div class="dropdown-content">
+            <a href="/history/alumni.html">Alumni</a>
+            <a href="/history/school_history.html">School History</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Our School
+            </button>
+            <div class="dropdown-content">
+              <a href="/our_school/gallery.html">Gallery</a>
+              <a href="/our_school/news.html">News</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+                <button class="dropbtn">Resources
+                </button>
+                <div class="dropdown-content">
+                  <a href="/resources/contests.html">Contests</a>
+                  <a href="/resources/eligibility.html">Eligibility Test</a>
+                </div>
+              </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Parents
+            </button>
+            <div class="dropdown-content">
+              <a href="/parents/policies.html">Policies</a>
+              <a href="/parents/contact.html">Contact Us</a>
+            </div>
+          </div> 
+      </div>
+</div>
+    <div class="body">
+        <div class="box">
+        <h2>Alumni</h2>
+        <p>At Bill Gates SS, we are very proud of our graduates. Our program is top tier and being able to finish it is an achievement in itself. Nevertheless, there are always students who find a way to stand out. This page is dedicated to those students and there post-secondary success. If you would like to see some of the success of our past alumni, please click on the names to view information about them.</p>
+        <div id="alumniButtons">
+        <button class="alumniNames" onClick="alumni1()">Jerome Chromintine Jr. <i class="arrow right"></i></button>
+        <button class="alumniNames" onClick="alumni2()">Khlorissa Hugnisburth <i class="arrow right"></i></button>
+        <button class="alumniNames" onClick="alumni3()">Jemmie Singh <i class="arrow right"></i></button>
+        <button class="alumniNames" onClick="alumni4()">Zion Patel III <i class="arrow right"></i></button>
+        </div>
+        <div id="alumniStuff">
+          <p>Click one of our alumnis and the information will display here!
+          </p>
+        </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>This is not a real school. Made by Hashir & Kaitlyn. <a href="/copyright.html">© 2018-2019</a></p>
+    </div>
+</body>
+</html>

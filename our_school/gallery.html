@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery - Bill Gates Specialized School</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="/external/img/logo.png" />
+    <style>
+      /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  height: 25%;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.gallery {
+  display: inline-block;
+  text-align: center;
+}
+    </style>
+    <script src="galleryScript.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="innerHeader">
+      <img src="/external/img/logo.png" alt="School logo" height="150px" width="150px" align="middle">
+      Bill Gates Specialized School
+    </div>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">History
+          </button>
+          <div class="dropdown-content">
+            <a href="/history/alumni.html">Alumni</a>
+            <a href="/history/school_history.html">School History</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Our School
+            </button>
+            <div class="dropdown-content">
+              <a href="/our_school/gallery.html">Gallery</a>
+              <a href="/our_school/news.html">News</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+                <button class="dropbtn">Resources
+                </button>
+                <div class="dropdown-content">
+                  <a href="/resources/contests.html">Contests</a>
+                  <a href="/resources/eligibility.html">Eligibility Test</a>
+                </div>
+              </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Parents
+            </button>
+            <div class="dropdown-content">
+              <a href="/parents/policies.html">Policies</a>
+              <a href="/parents/contact.html">Contact Us</a>
+            </div>
+          </div> 
+      </div>
+</div>
+    <div class="body">
+        <div class="box">
+         <h2>Gallery</h2>
+         <p>Bill Gates Specialized High School has a lot to offer. From field trips to in school events, we are a very involved school. Our students take pride in living our school to its full expectations. Throughout the years, we've been given the opportunity to go to many events. Some of these include meeting Bill Gates himself! Below is a gallery of some of our events.</p>
+      <div class="gallery">
+         <div class="row">
+            <div class="column">
+              <img src="/external/img/bill-gates-grad.jpg" style="width: 75%; height:75%;" alt="Bill Gates speaking to the Graduating Class of 2015" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/external/img/bill-gates-with-students.jpg" style="width:75%; height:75%" alt="Students from Bill Gates Specialized High School at a convention with Bill Gates" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/external/img/silicon-valley.jpg" style="width:85%; height:85%" alt="A picture of our trip to Silicon Valley!" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/external/img/field-trip.jpg" style="width:75%; height:75%" alt="Our students boarding for our trip to HR Tech Summit" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="container">
+              <img id="expandedImg" style="width:100%">
+              <div id="imgtext"></div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="https://cdn.parkrecord.com/wp-content/uploads/sites/11/2018/12/RoboticsTourney-TPR-121918-2-1240x885.jpg" style="width:75%; height:85%" alt="Robots that the Robotics class made" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="https://i.pinimg.com/originals/c8/24/b5/c824b55b3c1ae6533a82ea2eb38cf31c.jpg" style="width:75%; height:165px" alt="One of the computer labs in one of the class rooms" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="http://2wi3f81lkv5t45q3b8117hel.wpengine.netdna-cdn.com/wp-content/uploads/2015/12/10830572_767715839942883_847417124369506047_o.jpg" style="width:85%; height:165px" alt="The common study room in the library" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="https://www.hightechhigh.org/wp-content/uploads/2018/02/High-Tech-High-International-interior-656x465.jpg" style="width:75%; height:85%" alt="The main entrance of our school" onclick="myFunction(this);">
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>This is not a real school. Made by Hashir & Kaitlyn. <a href="/copyright.html">© 2018-2019</a></p>
+    </div>
+</body>
+</html>

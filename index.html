@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bill Gates Specialized School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="/external/img/logo.png" />
+    <style>
+      .body {
+        /* Flex CSS compatibility; lines 15-19 help keep the code consistent across different web browsers */
+        display: -webkit-box;      
+        display: -moz-box;         
+        display: -ms-flexbox;      
+        display: -webkit-flex;     
+        display: flex;
+        justify-content: space-between; 
+      }
+      .introBox {
+        /* Each box has consistent code, this class is to make the boxes look identical. */
+        margin: auto;
+        width: 35%;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        display: inline-block;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+<div class="header">
+  <!-- This is the header. This is consistent in all pages throughout. In this header, there are two classes: innerHeader and Navbar. -->
+    <div class="innerHeader">
+      <!-- This contains the school logo and the school name. -->
+      <img src="/external/img/logo.png" alt="School logo" height="150px" width="150px" align="middle">
+      Bill Gates Specialized School
+    </div>
+    <div class="navbar">
+      <!-- The navbar contains two classes: dropdown and dropdown-content. The dropdown container contains the initial navigation bar. The dropdown-content contains the links to the content when hovered over. -->
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">History
+          </button>
+          <div class="dropdown-content">
+            <a href="/history/alumni.html">Alumni</a>
+            <a href="/history/school_history.html">School History</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Our School
+            </button>
+            <div class="dropdown-content">
+              <a href="/our_school/gallery.html">Gallery</a>
+              <a href="/our_school/news.html">News</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+                <button class="dropbtn">Resources
+                </button>
+                <div class="dropdown-content">
+                  <a href="/resources/contests.html">Contests</a>
+                  <a href="/resources/eligibility.html">Eligibility Test</a>
+                </div>
+              </div> 
+          <div class="dropdown">
+            <button class="dropbtn">Parents
+            </button>
+            <div class="dropdown-content">
+              <a href="/parents/policies.html">Policies</a>
+              <a href="/parents/contact.html">Contact Us</a>
+            </div>
+          </div> 
+      </div>
+</div>
+    <div class="body">
+        <div class="introBox">
+          <h2>Welcome to Bill Gates SS!</h2>
+          <p>
+            This is a High School for only the elite! After being founded in 1990, Bill Gates Specialized School has slowly become a top school globally. With our many notable alumni (see <a href="history/alumni.html">here</a>), our school is considered a major success. As the only STEM focused prep school in North America, we prepare our students for long lasting careers in the technological field. <br><br>
+            If you are interested in applying for our school, please browse our website. We have many resources and information that we would like all future applicants to know. When you are ready to apply, please check the Eligibility test under the Resources section. This will tell you how prepared you are for our entrance exam, which is on June 17, 2020.
+          </p>
+        </div>
+        <div class="introBox">
+            <img src="/external/img/school.jpg" alt="School" height="100%" width="100%">
+        </div>
+    </div>
+    <div id="footer">
+        <!-- This footer was made  -->
+        <p>This is not a real school. Made by Hashir & Kaitlyn. <a href="/copyright.html">© 2018-2019</a></p>
+    </div>
+</body>
+</html>
