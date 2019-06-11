@@ -1,3 +1,4 @@
+// All functions use .innerHTML to replace the HTML in the current box.
 function contest1() {
     document.getElementById('info1').innerHTML = `<b>Date: 19/12/2018</b> <br><br>This contest is only for grade 9s. You can participate in this competition without leaving the house. eCyberMission is a web-based contest in which students use science, math, and technology to solve problems facing their communities. First-place winners receive $1,000 in savings bonds. The contest starts on December 19, 2018 and end on February 27, 2019. <br><br>
     <a onClick="closecontest1()">Click to collapse</a>`

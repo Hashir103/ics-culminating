@@ -1,4 +1,5 @@
 function alumni1() {
+    // Replaces the default box with the information needed for the student clicked.
     document.getElementById("alumniStuff").innerHTML = `<h3>Jerome Sinestro Chromintine Jr.</h3>
     <img src="http://grfx.cstv.com/photos/schools/alab/sports/genrel/auto_player/11555941.jpeg" height=600px width=450px>
 
@@ -7,6 +8,7 @@ function alumni1() {
     <p>At Bill Gates Specialized Highschool he  himself is a wide range of extra curricular activity. From being the captian of the cricket team to earning 1000 volunteer hours, Flink always strived to help the people and organizations around him. He started and contributed to many donations in school and community.</p> `;
 
 }
+// Same function is repeated with different information based on the person
 function alumni2() {
     document.getElementById("alumniStuff").innerHTML = `<h3>Khlorissa Hugnisburth</h3>
     <img src="https://www.ua.edu/news/wp-content/uploads/2016/12/commencement-1.jpg" height=500px width=700px>

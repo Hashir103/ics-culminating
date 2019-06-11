@@ -13,10 +13,13 @@ btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// When the user clicks on (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+// Code is copy and pasted and applied for all 5 functions
+
 }
 function codeConduct() {
     // Get the modal

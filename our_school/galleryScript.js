@@ -1,3 +1,4 @@
+// Function is executed on click of any image
 function myFunction(imgs) {
     // Get the expanded image
     var expandImg = document.getElementById("expandedImg");

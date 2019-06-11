@@ -1,7 +1,9 @@
 // Make basic information variables global
 var name, testVersion, grade, bday, point;
 function begin() {
+    // Removes button
     document.getElementById('buttonStart').remove();
+    // Replaces empty test box with information
     document.getElementById('test').innerHTML = `<h4>Basic Information:</h4><br>
     Full Name: <input id="name" placeholder="Full Name"><br><br>
     Birthday: <input id="bday" type="date"><br><br>
@@ -9,20 +11,28 @@ function begin() {
 <button id="continueButton" onClick="test()" type="button">Click to Continue</button>`
 }
 function test() {
+    // Retrieve information based on input
     name = document.getElementById('name').value;
     grade = document.getElementById("number").value;
-    bday = document.getElementById('bday').value;
-    nameChecker = name.length;
-    while (nameChecker == 0) {
+    bday = document.getElementById('bday').value; 
+
+    // Name checker; checks if name is entered
+    for (nameChecker = name.length; nameChecker == 0; nameChecker = name.length) {
         name = prompt('Please enter a valid name');
-        nameChecker = name.length;
-    } 
+    }
+    // Grade checker, checks if a grade is entered that isn't applicable.
     while (grade < 8 || grade > 11) {
         grade = +prompt('The grade you manually entered is not eligible! Please type a grade between 8 and 11');
     }
-    testVersion = Math.floor((Math.random()*3)+1); // Randomly chooses 1/3 tests
+
+    // Randomly chooses 1/3 tests using two math functions
+    testVersion = Math.random()*3+1;
+    testVersion = Math.floor(testVersion);
+    // Tells user which test they're doing
     alert(`There are three versions of this Sample Eligbility test. Your version is ${testVersion}`);
+    // Resets points to zero
     point = 0;
+// Checks test version. Then outputs test if condition is met
     if (testVersion == 1) {
         document.getElementById('test').innerHTML = `<h4>Test 1</h4>
         ${name}, you have as much time as you need on this test. Try and do these questions independently or you will fail the Entrance exam. <br><br>
@@ -134,40 +144,42 @@ function test() {
 
         <br><br><button id="endButton" onClick="endTest()">Click to Finish</button>`
     }
+    // Mostly for debugging, if test version failed
     else {
          alert(`Something went wrong... refreshing the page.`);
         location.reload(); // Refreshes page
     }
 }
 function endTest() {
+    // Starts making output info
     suggestion = '';
-    answerSheet = '';
+    // Every suggestion starts with this
     question = 'Since you got '
+    // Checks if each question is right. If it is, a point is added. Otherwise, whatever question is wrong is indicated.
     if (document.getElementById('correct1').checked) {
         point+= 1;
     }
     else {
         question += 'Question 1 wrong, '
-        answerSheet += `${document.getElementById('Question1')} <br> ${document.getElementById('correct1')} <br>`;
     }
     if (document.getElementById('correct2').checked) {
         point+= 1;
     }
     else {
         question += 'Question 2 wrong, '
-        answerSheet += `${document.getElementById('Question2')} <br> ${document.getElementById('correct2')} <br>`;
     }
     if (document.getElementById('correct3').checked) {
         point+= 1;
     }
     else {
         question += 'Question 3 wrong, '
-        answerSheet += `${document.getElementById('Question3')} <br> ${document.getElementById('correct3')} <br>`;
-    }
+        }
     if (point == 3) {
         question += 'all questions correct,'
     }
     var testTime = new Date(); // Gets current time
+
+    // Switch case is used to determine what you should do based on your points result. It can be either 0, 1, 2, or 3. The suggestion is added to the rest of your sentence.
     switch (point) {
         case 0:
         case 1:
@@ -182,6 +194,7 @@ function endTest() {
             suggestion = 'it is recommended that you apply for our school as soon as possible!';
             question += suggestion;
     }
+    // Information is then opened in a new tab and their results are given
     var results = window.open();
     results.document.write(`
     <link rel="stylesheet" href="/style.css">
@@ -196,7 +209,6 @@ function endTest() {
     Birthday: ${bday}<br>
     Grade: ${grade}<br><br>
     <b>FINAL POINTS: ${point}</b><br><br>
-    Our Suggestion? <i>${question}</i><br><br>
-    ${answerSheet}`);
-    location.reload();
+    Our Suggestion? <i>${question}</i><br><br>`);
+    location.reload(); // Refreshes questions so they can not look back.
 }
