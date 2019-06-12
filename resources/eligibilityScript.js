@@ -83,7 +83,7 @@ function test() {
          <br>
          <input type="Radio" id="wrong" name="q1">ax + by + c = 0
          <br>
-         <input type="Radio" id="correct1" name="q1" >ax^2 + bx + cy = 0</input>
+         <input type="Radio" id="correct1" name="q1" >ax^2 + bx + c = 0</input>
          <br>
          <input type="Radio" id="wrong" name="q1">(a + b)(a - b)
          <br><br>
